@@ -11,8 +11,127 @@
 */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: 'wght' var(--text-weight);
+  background-image: var(--background-gradient);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 100px auto;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 1);
+  min-block-size: clamp(327px, 312.56px + 3.85vw, 368px);
+  font-family: var(--secondary-font), serif;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.block-width {
+  inline-size: var(--block-width);
+}
+
+.black_border {
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.image_border {
+  border-top: 2px solid rgba(0, 0, 0, 1);
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card {
+  inline-size: var(--block-width);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.card_header {
+  font-variation-settings: 'wght' var(--header-weight);
+  font-size: 18px;
+  padding: 4px 12px 4px 10px;
+}
+
+.button_decor {
+  background-color: inherit;
+}
+
+.card__icon-button {
+  border: none;
+}
+
+.card__like-button {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  block-size: 38px;
+  inline-size: 130px;
+}
+
+.card_container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 25px;
+}
+
+.card_text {
+  font-weight: var(--text-weight);
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.image_wrapper {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  font-family: var(--secondary-font);
+  font-size: 14px;
+    top: 25px; 
+    right: 25px; 
+    color: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: hard-light;
+}
+
+@supports (text-stroke: 1px) {
+    .label {
+        -webkit-text-stroke: 1px var(--outline-color);
+        color: transparent; 
+    }
+}
+@supports not (text-stroke: 1px) {
+    .label {
+        text-shadow:
+            1px 1px 0 var(--outline-color),
+            -1px -1px 0 var(--outline-color),
+            1px -1px 0 var(--outline-color),
+            -1px 1px 0 var(--outline-color);
+    }
 }
