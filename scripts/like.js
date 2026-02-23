@@ -11,6 +11,9 @@
 const likeHeartArray = document.querySelectorAll('.like-icon');
 const likeButtonArray = document.querySelectorAll('.card__like-button');
 const iconButtonArray = document.querySelectorAll('.card__icon-button');
+const openModalBtn = document.getElementById('openModal');
+const modalWindow = document.getElementById('modalWindow');
+const closeModalBtn = document.getElementById('closeModal');
 
 iconButtonArray.forEach((iconButton, index) => {
   iconButton.onclick = () =>
@@ -39,3 +42,13 @@ function setButtonText(heart, button) {
     );
   }
 }
+
+        // Открываем модальное окно по клику на кнопку
+        openModalBtn.addEventListener('click', () => {
+            modalWindow.show();
+        });
+
+        // Закрываем модальное окно по клику на кнопку ОК
+        closeModalBtn.addEventListener('click', () => {
+            modalWindow.close();
+        });

@@ -25,4 +25,11 @@
   --main-header-width: clamp(210px, 162.46px + 12.68vw, 345px);
   --margin: clamp(0px, -130.28px + 34.74vw, 50vw);
   --outline-color: rgb(255, 255, 255, 0.3);
+  --text-color: rgb(255, 255, 255);
+  --background-color: rgb(255, 255, 255);
+  --accent-color: rgb(0, 0, 0);
+  --contour-color: rgb(0, 0, 0);
+  --animation-fill-color: red;
+  --main-body-color: inherit;
+  --core-color: white;
 }
