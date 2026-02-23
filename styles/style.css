@@ -80,10 +80,6 @@
   padding: 4px 12px 4px 10px;
 }
 
-.card__icon-button {
-  border: none;
-}
-
 .card__like-button {
   font-family: var(--secondary-font);
   font-size: 14px;
