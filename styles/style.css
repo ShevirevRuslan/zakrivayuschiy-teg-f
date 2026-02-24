@@ -325,10 +325,6 @@ dialog::backdrop {
   border-color: var(--accent-color);
 }
 
-.like-icon {
-
-}
-
 .main-body {
   fill: transparent;
   transition: fill 0.3s linear;
