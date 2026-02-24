@@ -24,7 +24,7 @@
   --logo-width: clamp(343px, 303.56px + 10.52vw, 455px);
   --main-header-width: clamp(210px, 162.46px + 12.68vw, 345px);
   --margin: clamp(0px, -130.28px + 34.74vw, 50vw);
-  --outline-color: rgb(255, 255, 255, 0.3);
+  --outline-color: rgb(255, 255, 255, 1);
   --text-color: rgb(255, 255, 255);
   --background-color: rgb(255, 255, 255);
   --accent-color: rgb(0, 0, 0);
@@ -32,4 +32,11 @@
   --animation-fill-color: red;
   --main-body-color: inherit;
   --core-color: white;
+  --hover-body-color: rgb(0, 0, 0);
+  --hover-core-color: rgb(0, 0, 0);
+  --active-main-body-color: red;
+  --active-core-color: red;
+  --liked-core-color: red;
+  --liked-main-color: red;
+  --liked-contour-color: red;
 }
