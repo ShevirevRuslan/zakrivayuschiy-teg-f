@@ -106,7 +106,7 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
-  gap: 12px;
+  gap: 7px;
 }
 
 .image_wrapper {
@@ -309,7 +309,7 @@ dialog::backdrop {
 }
 
 .card__icon-button {
-  inline-size: 27px;
+  inline-size: 38px;
   block-size: 38px;
   display: grid;
   align-items: center;
