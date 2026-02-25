@@ -224,6 +224,11 @@ dialog::backdrop {
     font-size: 14px;
   }
 
+  .modal_button_image {
+    inline-size: 28px;
+    block-size: 28px;
+  }
+
   .modal_button {
     inline-size: 306px;
     block-size: 84px;
